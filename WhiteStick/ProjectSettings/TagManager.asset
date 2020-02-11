@@ -6,6 +6,8 @@ TagManager:
   tags:
   - Cane
   - Ground
+  - Cube
+  - Concrete
   layers:
   - Default
   - TransparentFX

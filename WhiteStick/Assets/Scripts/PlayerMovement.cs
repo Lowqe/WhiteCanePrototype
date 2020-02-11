@@ -8,6 +8,10 @@ public class PlayerMovement : MonoBehaviour
 
     public float speed = 12f;
 
+    public AudioSource source;
+    public AudioClip clip;
+
+
     // Update is called once per frame
     void Update()
     {
@@ -17,5 +21,9 @@ public class PlayerMovement : MonoBehaviour
         Vector3 move = transform.right * x + transform.forward * z;
 
         controller.Move(move * speed * Time.deltaTime);
+        
+    // if(controller.velocity.x > )
     }
+
+
 }

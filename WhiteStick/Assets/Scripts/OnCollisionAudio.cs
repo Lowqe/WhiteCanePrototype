@@ -20,7 +20,7 @@ public class OnCollisionAudio : MonoBehaviour
         if (other.gameObject.CompareTag("Cane"))
         {
             source.PlayOneShot(clip);
-            Debug.Log("ljud spelas på kuben");
+            
 
         }
     }
