@@ -16,12 +16,14 @@ public class OnCollisionAudio : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        Debug.Log("Körs");
+        
         if (other.gameObject.CompareTag("Cane"))
         {
             source.PlayOneShot(clip);
-            
+
 
         }
+
+
     }
 }

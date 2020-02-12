@@ -22,7 +22,17 @@ public class PlayerMovement : MonoBehaviour
 
         controller.Move(move * speed * Time.deltaTime);
         
-    // if(controller.velocity.x > )
+     if(controller.velocity.x != 0 && !source.isPlaying)
+        {
+            source.PlayOneShot(clip);
+            Debug.Log("fotsteg");
+        }
+
+        if (controller.velocity.z != 0 && !source.isPlaying)
+        {
+            source.PlayOneShot(clip);
+            Debug.Log("fotsteg");
+        }
     }
 
 

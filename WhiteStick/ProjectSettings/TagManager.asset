@@ -8,6 +8,8 @@ TagManager:
   - Ground
   - Cube
   - Concrete
+  - Character
+  - Body
   layers:
   - Default
   - TransparentFX
