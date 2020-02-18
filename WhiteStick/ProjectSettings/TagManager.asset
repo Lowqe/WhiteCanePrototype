@@ -6,10 +6,8 @@ TagManager:
   tags:
   - Cane
   - Ground
-  - Cube
-  - Concrete
   - Character
-  - Body
+  - CollisionObject
   layers:
   - Default
   - TransparentFX

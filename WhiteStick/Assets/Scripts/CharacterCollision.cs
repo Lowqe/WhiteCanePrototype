@@ -17,7 +17,7 @@ public class CharacterCollision : MonoBehaviour
     void OnTriggerEnter(Collider other)
     {
         
-        if (other.gameObject.CompareTag("Cube"))
+        if (other.gameObject.CompareTag("CollisionObject"))
         {
             source.PlayOneShot(clip);
 
