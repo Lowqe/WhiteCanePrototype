@@ -16,11 +16,11 @@ public class MouseLook : MonoBehaviour
     bool startTimer;
     bool endTimer;
 
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        
-        
+       
     }
 
     void Update()
@@ -78,6 +78,13 @@ public class MouseLook : MonoBehaviour
                 duttTimer = 0f;
             }
         }
-
+        if (Input.GetKey(KeyCode.Space))
+        {
+            //whoosh-ljud som feedback att man återställt pinnfan
+            transform.localRotation = Quaternion.identity;
+            xRotation = 0f;
+            yRotation = 0f;
+        }
+        
     }
 }
