@@ -14,23 +14,30 @@ public class MouseLook : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        
+        
     }
 
     void Update()
     {
-        if (!Input.GetKey(KeyCode.Mouse0))
+        if (!Input.GetKey(KeyCode.Mouse1))
         {
             float mouseX = Input.GetAxis("Mouse X") * mouseSensitivity * Time.deltaTime;
-            float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
+            //float mouseY = Input.GetAxis("Mouse Y") * mouseSensitivity * Time.deltaTime;
 
-            xRotation -= mouseY;
-            xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+            //xRotation -= mouseY;
+            //xRotation = Mathf.Clamp(xRotation, -90f, 90f);
+            yRotation = Mathf.Clamp(yRotation, -90f, 90f);
 
             yRotation += mouseX;
 
             transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
-            
         }
+        if (Input.GetKeyDown(KeyCode.Mouse0))
+        {
+            transform.Rotate(9, 0, 0);
+            Debug.Log("White Cane boop");
 
+        } 
     }
 }
