@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CharacterCollision : MonoBehaviour
+public class GroundCollision : MonoBehaviour
 {
     public AudioSource source;
     public AudioClip clip;
@@ -16,13 +16,10 @@ public class CharacterCollision : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        
-        if (other.gameObject.CompareTag("CollisionObject"))
+
+        if (other.gameObject.CompareTag("Ground"))
         {
-            if (!source.isPlaying)
-            {
-                source.PlayOneShot(clip);
-            }
+            source.PlayOneShot(clip);
         }
     }
 }
