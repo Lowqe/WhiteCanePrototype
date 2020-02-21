@@ -11,6 +11,11 @@ public class MouseLook : MonoBehaviour
     float xRotation = 0f;
     float yRotation = 0f;
 
+    float duttTimer = 0f;
+    public float animTimer = 1f;
+    bool startTimer;
+    bool endTimer;
+
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -35,9 +40,44 @@ public class MouseLook : MonoBehaviour
         }
         if (Input.GetKeyDown(KeyCode.Mouse0))
         {
+            startTimer = true;
+
+
             transform.Rotate(9, 0, 0);
             Debug.Log("White Cane boop");
-
         } 
+        if (startTimer == true)
+        {
+            duttTimer += Time.deltaTime;
+
+            float lerpPercent = duttTimer / animTimer;
+
+            float xRotation = Mathf.Lerp(0, 8, lerpPercent);
+
+            transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+
+            if (duttTimer >= animTimer)
+            {
+                startTimer = false;
+                duttTimer = 0f;
+                endTimer = true;
+            }
+        }
+        if (endTimer == true)
+        {
+            duttTimer += Time.deltaTime;
+
+            float lerpPercent = duttTimer / animTimer;
+
+            float xRotation = Mathf.Lerp(8, 0, lerpPercent);
+
+            transform.localRotation = Quaternion.Euler(xRotation, yRotation, 0f);
+            if (duttTimer >= animTimer)
+            {
+                endTimer = false;
+                duttTimer = 0f;
+            }
+        }
+
     }
 }

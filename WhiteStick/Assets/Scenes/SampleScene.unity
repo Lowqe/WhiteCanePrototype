@@ -1761,6 +1761,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 100
   stickRotation: {fileID: 502554254}
+  animTimer: 0.2
 --- !u!65 &502554258
 BoxCollider:
   m_ObjectHideFlags: 0
