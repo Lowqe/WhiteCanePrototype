@@ -5,9 +5,8 @@ using UnityEngine;
 public class OnCollisionAudio : MonoBehaviour
 {
     public AudioSource source;
-    public AudioClip clip;
+    public AudioClip[] clips;
 
-    // Start is called before the first frame update
     void Start()
     {
         source = GetComponent<AudioSource>();
@@ -16,14 +15,21 @@ public class OnCollisionAudio : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        
+
         if (other.gameObject.CompareTag("Cane"))
         {
-            source.PlayOneShot(clip);
+            RandomSound();
 
 
         }
-
-
+    }
+    void RandomSound()
+    {
+       // int randomIndex;
+      //  randomIndex = Random.Range(0, clips.Length);
+        //source.PlayOneShot(clips[randomIndex]);
+        
+        source.clip=clips[Random.Range(0, clips.Length)];
+        source.PlayOneShot(source.clip);
     }
 }
