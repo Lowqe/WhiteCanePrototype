@@ -19,16 +19,10 @@ public class OnCollisionAudio : MonoBehaviour
         if (other.gameObject.CompareTag("Cane"))
         {
             RandomSound();
-
-
         }
     }
     void RandomSound()
     {
-       // int randomIndex;
-      //  randomIndex = Random.Range(0, clips.Length);
-        //source.PlayOneShot(clips[randomIndex]);
-        
         source.clip=clips[Random.Range(0, clips.Length)];
         source.PlayOneShot(source.clip);
     }

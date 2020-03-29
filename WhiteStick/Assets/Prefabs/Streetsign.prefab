@@ -120,7 +120,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 24300002, guid: 248799cb4acba48f7b3ee842a80f788c,
     type: 2}
   m_audioClip: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -219,4 +219,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 4610848064895027747}
   clips:
-  - {fileID: 8300000, guid: b757f97df457c62478d0c6c7db0a9a2a, type: 3}
+  - {fileID: 8300000, guid: 46e8b87df3f8a544ba474f2632900b7e, type: 3}
+  - {fileID: 8300000, guid: 0c9a888d25839b8408feea1dd005b8de, type: 3}
+  - {fileID: 8300000, guid: 88af6b578c15b5849a4120af4e5052a3, type: 3}
+  - {fileID: 8300000, guid: 014cfbf97e9ca214eb643a4cf2a7d448, type: 3}
+  - {fileID: 8300000, guid: 19a580a639eb8cc41b2b9cad133da6c7, type: 3}
+  - {fileID: 8300000, guid: 3aac1db24a793ac409a33db0f697a68d, type: 3}
+  - {fileID: 8300000, guid: 0c6ed6d941f896042be8095c78af527b, type: 3}
+  - {fileID: 8300000, guid: 9368bd1a72c487a49ad7ac91ae7ad86f, type: 3}

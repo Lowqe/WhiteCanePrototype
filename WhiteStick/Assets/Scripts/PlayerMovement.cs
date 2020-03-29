@@ -9,7 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed = 12f;
 
     public AudioSource source;
-    public AudioClip clip;
+    public AudioClip[] clips;
 
 
     // Update is called once per frame
@@ -24,13 +24,15 @@ public class PlayerMovement : MonoBehaviour
         
      if(controller.velocity.x != 0 && !source.isPlaying)
         {
-            source.PlayOneShot(clip);
+            source.clip = clips[Random.Range(0, clips.Length)];
+            source.PlayOneShot(source.clip);
             Debug.Log("fotsteg");
         }
 
         if (controller.velocity.z != 0 && !source.isPlaying)
         {
-            source.PlayOneShot(clip);
+            source.clip = clips[Random.Range(0, clips.Length)];
+            source.PlayOneShot(source.clip);
             Debug.Log("fotsteg");
         }
     }

@@ -100,10 +100,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   source: {fileID: 7604249781559998395}
   clips:
-  - {fileID: 8300000, guid: b757f97df457c62478d0c6c7db0a9a2a, type: 3}
-  - {fileID: 8300000, guid: b757f97df457c62478d0c6c7db0a9a2a, type: 3}
-  - {fileID: 8300000, guid: b757f97df457c62478d0c6c7db0a9a2a, type: 3}
-  - {fileID: 8300000, guid: b757f97df457c62478d0c6c7db0a9a2a, type: 3}
+  - {fileID: 8300000, guid: bb96d70557471d747b6ca04863493e96, type: 3}
+  - {fileID: 8300000, guid: cd11d22d2509c6c4bb7c08d75b63be4e, type: 3}
+  - {fileID: 8300000, guid: e403a3dc666a4c74dbacfc9d8b8789bf, type: 3}
+  - {fileID: 8300000, guid: 4ab0d6f0138629c48bd8c7e78e96ad63, type: 3}
+  - {fileID: 8300000, guid: 2bdd579a4a7e1d044addb7d01d3483c5, type: 3}
 --- !u!82 &7604249781559998395
 AudioSource:
   m_ObjectHideFlags: 0

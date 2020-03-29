@@ -5,7 +5,7 @@ using UnityEngine;
 public class GroundCollision : MonoBehaviour
 {
     public AudioSource source;
-    public AudioClip clip;
+    public AudioClip[] clips;
 
     // Start is called before the first frame update
     void Start()
@@ -19,7 +19,8 @@ public class GroundCollision : MonoBehaviour
 
         if (other.gameObject.CompareTag("Ground"))
         {
-            source.PlayOneShot(clip);
+            source.clip = clips[Random.Range(0, clips.Length)];
+            source.PlayOneShot(source.clip);
         }
     }
 }
