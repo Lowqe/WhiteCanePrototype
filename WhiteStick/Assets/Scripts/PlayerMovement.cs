@@ -26,14 +26,14 @@ public class PlayerMovement : MonoBehaviour
         {
             source.clip = clips[Random.Range(0, clips.Length)];
             source.PlayOneShot(source.clip);
-            Debug.Log("fotsteg");
+           
         }
 
         if (controller.velocity.z != 0 && !source.isPlaying)
         {
             source.clip = clips[Random.Range(0, clips.Length)];
             source.PlayOneShot(source.clip);
-            Debug.Log("fotsteg");
+            
         }
     }
 

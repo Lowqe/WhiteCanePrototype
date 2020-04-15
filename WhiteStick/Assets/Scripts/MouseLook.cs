@@ -44,7 +44,7 @@ public class MouseLook : MonoBehaviour
 
 
             transform.Rotate(9, 0, 0);
-            Debug.Log("White Cane boop");
+            
         } 
         if (startTimer == true)
         {

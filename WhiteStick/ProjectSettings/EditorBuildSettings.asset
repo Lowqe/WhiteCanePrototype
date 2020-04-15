@@ -6,17 +6,17 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: "Assets/Scenes/TutorialMedK\xE4pp.unity"
-    guid: d1778ed7ea950c54390e1cced5afc745
-  - enabled: 1
-    path: "Assets/Scenes/Niv\xE5MedK\xE4pp.unity"
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
-  - enabled: 1
     path: "Assets/Scenes/TutorialUtanK\xE4pp.unity"
     guid: 53e37f9935a66c7499789da98321cd83
   - enabled: 1
     path: "Assets/Scenes/Niv\xE5UtanK\xE4pp.unity"
     guid: 91db87603d1d9d647a8e7327ffe325e2
+  - enabled: 1
+    path: "Assets/Scenes/TutorialMedK\xE4pp.unity"
+    guid: d1778ed7ea950c54390e1cced5afc745
+  - enabled: 1
+    path: "Assets/Scenes/Niv\xE5MedK\xE4pp.unity"
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
     path: Assets/Scenes/testetAvslutat.unity
     guid: 327332f61eb46d147838eb1dc1556bac
